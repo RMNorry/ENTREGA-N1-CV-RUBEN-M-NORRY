@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trabajo Final CV - Ticmas</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="icon" href="imagenes/icono.svg" type="svg" >
+</head>
+<body>
+	<header>
+		<h1>Trabajo Final CV</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">Acerca de mí</a></li>
+				<li><a href="#skills">Habilidades</a></li>
+				<li><a href="#projects">Proyectos</a></li>
+				<li><a href="#contact">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="about">
+            <div class="foto"> <img src="" alt="perfil de usuario" id="foto"> </div>
+            <h1> <span id="nombre"></span> <span id="apellido"></span></h1>
+			<h2>Acerca de mí</h2>
+			<p> ¡Hola! tengo <b> <span id="edad"></span> </b> años. vivo en <b> <span id="provincia"></span> </b>, <b><span id="pais"> </span> </b>.
+                Soy una persona apasionada por la programación. Desde que era joven, siempre me ha interesado cómo 
+                funcionan los programas y cómo se pueden crear cosas nuevas y útiles a través del código.
+                Lo que más me gusta de la programación es la sensación de estar creando algo desde cero y ver cómo va 
+                tomando forma a medida que avanzo en el desarrollo. Me gusta enfrentarme a los desafíos que presenta cada proyecto y buscar soluciones creativas para resolver problemas.
+               </p>
+			   <button class="btn" onclick="toggleInfo()">Mostrar información adicional</button>
+
+			   <div class="card">
+        
+				
+				<p id="info" class="hide">Correo: <b><span id="correo"> </b></span> <br> Telefono: <b><span id="telefono"> </b></span></p>
+			  </div>
+		
+
+		<section id="skills">
+			<h2>Habilidades</h2>
+			<ul>
+				<img src="imagenes/html5.png" alt="imagen html"/>
+                <img src="imagenes/css3.png" alt="imagen css "/>
+                <img src="imagenes/javascript.png" alt="imagen javascript "/>
+			</ul>
+		</section>
+
+		<section id="projects">
+			<h2>Proyectos</h2>
+
+			<ul>
+				<li>
+					<h3>Proyecto 1</h3>
+					<img src="imagenes/imagen1.jpg" alt="imagen html" class="imagen"/>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quaerat nesciunt laudantium aspernatur harum soluta?</p>
+					<p>Tecnologías utilizadas:</p>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+				</li>
+				<li>
+					<h3>Proyecto 2</h3>
+					<img src="imagenes/imagen2.jpg" alt="imagen html" class="imagen"/>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quaerat nesciunt laudantium aspernatur harum soluta?</p>
+					<p>Tecnologías utilizadas:</p>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section id="contact">
+			<h2>Contacto</h2>
+			<form action="mailto:rmnorry@hotmail.com" method="post" enctype="text/plain">
+				<label for="name">Nombre:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Correo electrónico:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Mensaje:</label>
+				<textarea id="message" name="message" required></textarea>
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>Desarrollado por <a href="#">Rubén Norry  </a> - Trabajo Final CV Ticmas</p>
+	</footer>
+
+    <script src="app/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
