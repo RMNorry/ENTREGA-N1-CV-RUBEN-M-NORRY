@@ -37,6 +37,7 @@ async function generarUsuario() {
 
 }
 document.addEventListener('DOMContentLoaded',generarUsuario)
+info.style.display = "none";
 
    
 
